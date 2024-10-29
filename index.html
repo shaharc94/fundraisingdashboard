@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fundraising Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" dir="rtl">
+    <h1 class="main-title">מערכת ניהול גיוס כספים</h1>
+
+    <!-- Summary Cards -->
+    <div class="summary-cards">
+      <div class="card">
+        <h2 class="card-title">סה״כ גויס</h2>
+        <p id="total-raised" class="card-value">₪0</p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">מספר תורמים</h2>
+        <p id="total-donors" class="card-value">0</p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">קמפיינים פעילים</h2>
+        <p id="active-campaigns" class="card-value">0</p>
+      </div>
+    </div>
+
+    <!-- Campaign Table -->
+    <div class="campaign-table-section">
+      <h2 class="section-title">קמפיינים קיימים</h2>
+      <table class="campaign-table">
+        <thead>
+          <tr>
+            <th>שם הקמפיין</th>
+            <th>מוביל</th>
+            <th>יעד</th>
+            <th>סכום שגויס</th>
+            <th>תורמים</th>
+            <th>סטטוס</th>
+          </tr>
+        </thead>
+        <tbody id="campaigns-body">
+          <!-- Rows will be dynamically generated here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
